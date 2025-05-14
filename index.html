@@ -1,0 +1,100 @@
+<html<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>F.A TEAM ELITE</title>
+  <style>
+    body {
+      background-color: #0b0f2b;
+      color: #f1c40f;
+      font-family: 'Arial Black', sans-serif;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .logo {
+      max-width: 250px;
+      margin: 20px auto;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin: 10px 0;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 360px;
+      margin: 30px auto;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: none;
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 1.1rem;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf); }
+    .facebook { background-color: #3b5998; }
+    .youtube { background-color: #ff0000; }
+    .whatsapp { background-color: #25D366; }
+
+    .btn i {
+      font-size: 1.4rem;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body onload="playSound()">
+  <audio id="radioSound" src="bip_militar_fa_team_elite.mp3"></audio>
+
+  <img class="logo" src="logo-fa-team-elite.png" alt="F.A TEAM ELITE Logo">
+  <h1>F.A TEAM ELITE</h1>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/f.a.teamelite/" class="btn instagram" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://facebook.com/FA.TEAMELITE" class="btn facebook" target="_blank">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+    <a href="https://youtube.com/@FATEAMELITE" class="btn youtube" target="_blank">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+    <a href="https://chat.whatsapp.com/F903WxsKENwJMiujostpcJ" class="btn whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+
+  <script>
+    function playSound() {
+      const audio = document.getElementById("radioSound");
+      audio.play().catch(() => {});
+    }
+  </script>
+</body>
+</html>
