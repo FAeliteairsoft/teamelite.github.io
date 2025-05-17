@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: yellow;
+  background-image: url('fa-team-elite.png.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* sobreposição escura */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+h1, .frase, .logo, .botoes {
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 120px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: #FFD700;
+}
+
+.frase {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.botoes a {
+  background-color: #000;
+  color: yellow;
+  padding: 15px 40px; /* Aumentado */
+  font-size: 1.2rem;   /* Aumentado */
+  border: 3px solid yellow;
+  text-decoration: none;
+  border-radius: 10px; /* Aumentado */
+  transition: 0.3s;
+}
+
+.botoes a:hover {
+  background-color: yellow;
+  color: black;
+  transform: scale(1.05); /* Efeito de aumento no hover */
+}
